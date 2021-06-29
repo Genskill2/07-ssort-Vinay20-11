@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <assert.h>
-#include <stdlib.h>
 
 void swap_max(int arr[], int l, int n)
 {
