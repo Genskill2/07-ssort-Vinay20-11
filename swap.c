@@ -2,19 +2,19 @@
 void swap_max(int arr[], int l, int n)
 {
 int t,temp;
-int mx=a[n];
+int mx=arr[n];
 t=n;
 for(int i=(n+1);i<l;i++)
 {
-if(a[i]>mx)
+if(arr[i]>mx)
 {
-mx=a[i];
+mx=arr[i];
 t=i;
 }
 }
-temp=a[t];
-a[t]=a[n];
-a[n]=temp;
+temp=arr[t];
+arr[t]=arr[n];
+arr[n]=temp;
 }
 void ssort(int arr[], int l)
 {
