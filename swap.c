@@ -1,22 +1,19 @@
-void swap_max(int arr[], int l, int n)
-{
-int t,temp;
-int mx=arr[n];
-t=n;
-for(int i=(n+1);i<l;i++)
-{
-if(arr[i]>mx)
-{
-mx=arr[i];
-t=i;
+void swap_max(int arr[],int l,int n){
+int m=arr[n];
+int p=n;
+for (int i=n;i<l;i++){
+if(arr[i]>m)
+{m=arr[i];
+p=i;}
 }
+int t;
+t=arr[p];
+arr[p]=arr[n];
+arr[n]=t;
 }
-temp=arr[t];
-arr[t]=arr[n];
-arr[n]=temp;
+
+void ssort(int arr[],int l)
+{for(int i=0;i<l-1;i++)
+{swap_max(arr,l,i);
 }
-void ssort(int arr[], int l)
-{
-for(int i=0;i<l;++i)
-swap_max(arr,l,i);
 }
